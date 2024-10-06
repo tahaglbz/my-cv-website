@@ -15,7 +15,7 @@ const stats = [
         text:"Technologies mastered"
     },
     {
-        num: 312,
+        num: 237,
         text:"Code commits"
     }
 
