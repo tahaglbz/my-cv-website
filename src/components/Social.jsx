@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn, FaInstagram, FaEnvelope } from 'react-icons/fa'
 
 const socials = [
   { icon: <FaGithub />, path: 'https://github.com/tahaglbz' },
-  { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/taha-g%C3%BClbaz/' },
+  { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/taha-gulbaz/' },
   { icon: <FaInstagram />, path: 'https://www.instagram.com/taha_gulbaz/' },
   { icon: <FaEnvelope />, path: 'mailto:tahaglbz1@gmail.com' },
 

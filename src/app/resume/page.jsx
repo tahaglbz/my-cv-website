@@ -39,7 +39,7 @@ const experience = {
   icon: "/public/assets/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "I have worked on various projects, including web development and mobile app development",
+    "I have worked on various projects, including web development, mobile app development and data science",
   items: [
     {
       company: "Albayrak Media",

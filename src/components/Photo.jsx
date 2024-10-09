@@ -10,7 +10,7 @@ const Photo = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+          transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
         }}
         className="relative"
       >
@@ -24,7 +24,7 @@ const Photo = () => {
           className="w-[250px] h-[250px] xl:w-[400px] xl:h-[400px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           style={{
             clipPath: "circle(50%)",
-            boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.3)", // Gölgelendirme ekledik
+            boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.3)",
           }}
         >
           <Image
