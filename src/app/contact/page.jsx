@@ -14,11 +14,7 @@ const info = [
     title: "Email",
     description: "tahaglbz1@gmail.com"
   },
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+90) 5313256038"
-  },
+ 
 ]
 
 const Contact = () => {
