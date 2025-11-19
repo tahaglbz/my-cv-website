@@ -15,7 +15,7 @@ const Home = () => {
             <h1 className="h1 mb-6">Hello I&apos;m <br />
               <span className="text-accent">Taha Gülbaz</span></h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I am a 3rd year software engineering student. I am working on areas such as mobile application development, backend development and data science. I develop projects for competitions such as Teknofest and TÜBİTAK.
+              I am a 4th year software engineering student. I am working on areas such as mobile application development, backend development and data science. I develop projects for competitions such as Teknofest and TÜBİTAK.
             </p>
 
             {/* btn and socials */}
