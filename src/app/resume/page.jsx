@@ -46,6 +46,11 @@ const experience = {
       position: "Mobile App Developer",
       duration: "2024 August - 2024 October",
     },
+    {
+      company: "Software Persona",
+      position: "Mobile and Web App Developer",
+      duration: "2026 April - 2026 May",
+    },
   ],
 };
 
