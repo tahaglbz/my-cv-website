@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
-
+import Script from "next/script"; // 1. Adım: Next.js Script bileşenini import ettik
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -20,7 +20,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        
+        {/* 2. Adım: Google Analytics scriptlerini buraya ekledik */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-T4RY56BRG5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-T4RY56BRG5');
+          `}
+        </Script>
       </head>
       <body className={jetbrainsMono.variable}>
         <Header />
@@ -28,7 +41,6 @@ export default function RootLayout({ children }) {
         <PageTransition>
           {children}
         </PageTransition>
-
       </body>
     </html>
   );
