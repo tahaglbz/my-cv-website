@@ -18,32 +18,26 @@ export const metadata = {
 
 // ... diğer importlar aynı kalacak ...
 
-export default function RootLayout({ children }) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID; // Değişkeni tanımladık
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-T4RY56BRG5";
 
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics kodunu dinamik hale getirdik */}
-        {gaId && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', '${gaId}');
-              `}
-            </Script>
-          </>
-        )}
-      </head>
+      <head />
       <body className={jetbrainsMono.variable}>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
         <Header />
         <StairTransition></StairTransition>
         <PageTransition>{children}</PageTransition>
